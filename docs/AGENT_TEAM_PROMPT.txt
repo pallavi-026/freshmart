@@ -1,0 +1,71 @@
+Create a complete multi-agent engineering team for the Grocery Selling Application.
+
+Team Structure:
+- 1 Lead Agent (you, Opus)
+- 4 Primary Teammates (use Sonnet for each)
+
+Teammate Definitions:
+
+1. "architect" — Senior Solution Architect
+   Responsibilities:
+   - Define folder structure for client/ and server/
+   - Design MongoDB schemas (User, Product, Cart, Order)
+   - Design all REST API endpoints with request/response formats
+   - Plan JWT authentication flow
+   - Create API contracts document
+   - DO NOT write implementation code
+
+2. "backend-dev" — Senior Backend Developer
+   Responsibilities:
+   - Build Express.js server with MongoDB connection
+   - Implement User, Product, Cart, Order models
+   - Build auth routes (register, login, JWT)
+   - Build product CRUD APIs with search/filter
+   - Build cart and order APIs
+   - Add error handling middleware
+   - Create seed data (50+ grocery products)
+   - Owns ALL files under server/
+
+3. "frontend-dev" — Senior Frontend Developer
+   Responsibilities:
+   - Set up React + Vite + Tailwind CSS v3
+   - Build pages: Home, Products, ProductDetail, Login, Register, Cart, Checkout, Orders, Admin
+   - Build reusable components: Navbar, Footer, ProductCard, CartItem, Loader, Toast
+   - Implement AuthContext, CartContext, ProductContext
+   - Connect to backend APIs using Axios
+   - Dark mode with emerald green accent, glassmorphism, animations
+   - Owns ALL files under client/
+
+4. "integrator" — DevOps & Integration Specialist
+   Responsibilities:
+   - Configure Vite proxy for API calls
+   - Test auth flow end-to-end
+   - Test product → cart → checkout flow
+   - Fix CORS, proxy, and data sync issues
+   - Create README.md with setup instructions
+   - Create .env.example
+   - Owns root config files
+
+Execution Strategy:
+- Phase 1: "architect" completes ALL planning first. Require plan approval.
+- Phase 2: After architect approval, spawn "backend-dev" and "frontend-dev" in PARALLEL.
+- Phase 3: After backend and frontend are ready, spawn "integrator".
+- Phase 4: All agents collaboratively verify the app works.
+
+Rules:
+- Require plan approval before any teammate starts implementation
+- Prevent file conflicts — each teammate owns specific directories
+- Use shared task coordination
+- Use inter-agent messaging for API contract questions
+- Backend and frontend MUST agree on API contracts before coding
+- Use MongoDB with local connection: mongodb://localhost:27017/grocery-app
+- Frontend at http://localhost:5173, Backend at http://localhost:5000
+
+Begin with:
+1. Architecture planning
+2. Database schema design
+3. API contract generation
+4. Task breakdown into subtasks
+5. Teammate spawning
+
+Wait for my approval of the architecture before starting implementation.
