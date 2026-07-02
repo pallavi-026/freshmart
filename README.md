@@ -3,7 +3,7 @@ FreshMart is a high-performance, full-stack grocery application built with the M
 FreshMart Banner
 
 🚀 Repository & Demo
-GitHub Repo: https://github.com/Mdsayeed098/freshmart
+GitHub Repo: https://github.com/pallavi-026freshmart
 Live Demo: [https://freshmart-db6y.onrender.com/]
 ✨ Key Features
 👤 User Experience
